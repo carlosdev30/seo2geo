@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scroll margin for anchored sections to compensate for fixed header */
+#hero, 
+#top-masterclass, 
+#top-faq, 
+#top-glosario, 
+#top-blog, 
+#top-servicios, 
+#top-contacto,
+#top-legal,
+#top-privacy {
+  scroll-margin-top: 80px;
+}
+
+/* Custom styles for better UX */
+.prose h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.prose p {
+  margin-bottom: 1rem;
+}
+
+.prose ul {
+  margin-bottom: 1rem;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+}
+
+/* FAQ Accordion styles */
+.faq-panel[hidden] { 
+  display: none; 
+}
+
+.faq-trigger {
+  all: unset;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  padding: 12px 0;
+}
+
+.faq-trigger:focus {
+  outline: 2px solid #74aa9c;
+  outline-offset: 2px;
+}
+
+.faq-trigger[aria-expanded="true"] {
+  /* estilo activo opcional */
+}

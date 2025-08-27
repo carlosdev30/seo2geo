@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://seo2geo.io/sitemap.xml
+
+# Disallow admin areas (if any in the future)
+Disallow: /admin/
+Disallow: /private/
+
+# Allow all bots to crawl the site
+# SEO2GEO specializes in AI SEO, so we welcome all crawlers
