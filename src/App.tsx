@@ -10,8 +10,7 @@ import MasterclassPage from './pages/MasterclassPage';
 
 function App() {
   return (
-    <div className="min-h-screen relative">
-      <div className="cosmic-background"></div>
+    <div className="min-h-screen bg-black">
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
