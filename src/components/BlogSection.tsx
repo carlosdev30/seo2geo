@@ -28,7 +28,7 @@ const BlogSection: React.FC = () => {
   ];
 
   return (
-    <section id="blog" className="bg-gray-900 py-16">
+    <section id="blog" className="py-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -41,7 +41,7 @@ const BlogSection: React.FC = () => {
 
         <div className="grid md:grid-cols-3 gap-8">
           {blogPosts.map((post) => (
-            <article key={post.slug} className="bg-black rounded-lg border border-gray-800 overflow-hidden hover:border-green-600 transition-colors duration-300">
+            <article key={post.slug} className="bg-black bg-opacity-30 rounded-lg border border-gray-800 overflow-hidden hover:border-green-600 transition-colors duration-300 backdrop-blur-sm">
               <div className="p-6">
                 <div className="flex items-center text-sm text-gray-400 mb-4">
                   <Calendar className="w-4 h-4 mr-2" />

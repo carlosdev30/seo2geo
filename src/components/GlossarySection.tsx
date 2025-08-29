@@ -132,7 +132,7 @@ const GlossarySection: React.FC = () => {
   const previewTerms = glossaryTerms.slice(0, 6);
 
   return (
-    <section className="bg-black py-16">
+    <section className="py-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <div className="flex items-center justify-center mb-4">
@@ -152,7 +152,7 @@ const GlossarySection: React.FC = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
           {previewTerms.map((item, index) => (
-            <div key={index} className="bg-gray-900 p-6 rounded-lg border border-gray-800 hover:border-teal-green transition-colors duration-300">
+            <div key={index} className="bg-gray-900 bg-opacity-30 p-6 rounded-lg border border-gray-800 hover:border-teal-green transition-colors duration-300 backdrop-blur-sm">
               <h3 className="text-lg font-bold text-teal-green mb-3">
                 {item.term}
               </h3>

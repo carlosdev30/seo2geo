@@ -17,7 +17,7 @@ const MasterclassSection: React.FC = () => {
           Cómo posicionarte en la Inteligencia Artificial
         </h3>
         
-        <div className="bg-gray-900 p-8 rounded-lg border border-gray-800 mb-8">
+        <div className="bg-gray-900 bg-opacity-30 p-8 rounded-lg border border-gray-800 mb-8 backdrop-blur-sm">
           <p className="text-lg text-gray-300 mb-8 leading-relaxed">
             Accede a una Masterclass de 45 minutos donde aprenderás cómo preparar tu web y tu marca 
             para aparecer en ChatGPT, Gemini, Perplexity y los resúmenes de IA de Google.

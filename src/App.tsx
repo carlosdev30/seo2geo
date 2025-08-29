@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import AnimatedBackground from './components/AnimatedBackground';
 import HomePage from './pages/HomePage';
 import ServicesPage from './pages/ServicesPage';
 import BlogPost from './pages/BlogPost';
@@ -11,6 +12,7 @@ import MasterclassPage from './pages/MasterclassPage';
 function App() {
   return (
     <Router>
+      <AnimatedBackground />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/servicios" element={<ServicesPage />} />

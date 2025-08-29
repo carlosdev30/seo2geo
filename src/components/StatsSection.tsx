@@ -66,7 +66,7 @@ const StatsSection: React.FC = () => {
   ];
 
   return (
-    <section className="bg-black py-20">
+    <section className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
@@ -85,7 +85,7 @@ const StatsSection: React.FC = () => {
           {stats.map((stat, index) => (
             <div 
               key={index} 
-              className="bg-gray-900 p-8 rounded-xl border border-gray-800 hover:border-military-green transition-all duration-300 hover:shadow-2xl hover:shadow-military-green/10 group"
+              className="bg-gray-900 bg-opacity-30 p-8 rounded-xl border border-gray-800 hover:border-military-green transition-all duration-300 hover:shadow-2xl hover:shadow-military-green/10 group backdrop-blur-sm"
             >
               {/* Icon */}
               <div className="flex justify-center mb-6 group-hover:scale-110 transition-transform duration-300">

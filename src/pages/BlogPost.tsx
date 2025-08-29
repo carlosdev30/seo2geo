@@ -185,7 +185,7 @@ const BlogPost: React.FC = () => {
 
   if (!post) {
     return (
-      <div className="min-h-screen bg-black text-white flex items-center justify-center">
+      <div className="min-h-screen text-white flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-4">Post no encontrado</h1>
           <Link to="/" className="text-green-600 hover:text-green-500">
@@ -197,7 +197,7 @@ const BlogPost: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen text-white">
       <SEOHead 
         title={`${post.title} | SEO2GEO Blog`}
         description={post.description}

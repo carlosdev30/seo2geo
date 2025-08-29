@@ -16,7 +16,7 @@ const HomePage: React.FC = () => {
   const { isModalOpen, closeModal } = useMasterclassModal();
 
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen relative" style={{ zIndex: 1 }}>
       <SEOHead />
       <Header />
       <Hero />

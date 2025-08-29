@@ -6,7 +6,7 @@ const AnalysisSection: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <section className="bg-gradient-to-b from-gray-900 to-black py-16">
+    <section className="py-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="flex items-center justify-center mb-6">
           <MessageCircle className="w-12 h-12 text-teal-green mr-4" />
@@ -15,7 +15,7 @@ const AnalysisSection: React.FC = () => {
           </h2>
         </div>
         
-        <div className="bg-gray-900 p-8 rounded-lg border border-gray-800 mb-8">
+        <div className="bg-gray-900 bg-opacity-30 p-8 rounded-lg border border-gray-800 mb-8 backdrop-blur-sm">
           <p className="text-lg text-gray-300 mb-6 leading-relaxed">
             No solo recibirás un informe sobre cómo aparece tu web en buscadores de IA como ChatGPT, Gemini, Perplexity y los resúmenes de Google.
           </p>
@@ -39,7 +39,7 @@ const AnalysisSection: React.FC = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-6 text-left">
-          <div className="bg-black p-6 rounded-lg border border-gray-800">
+          <div className="bg-black bg-opacity-30 p-6 rounded-lg border border-gray-800 backdrop-blur-sm">
             <h3 className="text-lg font-semibold text-teal-green mb-3">📊 El informe incluye:</h3>
             <ul className="text-gray-300 space-y-2">
               <li>• Análisis de presencia en IA</li>
@@ -49,7 +49,7 @@ const AnalysisSection: React.FC = () => {
             </ul>
           </div>
           
-          <div className="bg-black p-6 rounded-lg border border-gray-800">
+          <div className="bg-black bg-opacity-30 p-6 rounded-lg border border-gray-800 backdrop-blur-sm">
             <h3 className="text-lg font-semibold text-teal-green mb-3">🎯 En la asesoría veremos:</h3>
             <ul className="text-gray-300 space-y-2">
               <li>• Prioridades</li>

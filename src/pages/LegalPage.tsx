@@ -91,7 +91,7 @@ const LegalPage: React.FC<LegalPageProps> = ({ type }) => {
   const { title, content } = getContent();
 
   return (
-    <div id={`top-${type === 'legal' ? 'legal' : type === 'privacy' ? 'privacy' : 'contacto'}`} className="min-h-screen bg-black text-white">
+    <div id={`top-${type === 'legal' ? 'legal' : type === 'privacy' ? 'privacy' : 'contacto'}`} className="min-h-screen text-white">
       <SEOHead 
         title={`${title} | SEO2GEO`}
         description={`${title} de SEO2GEO - Agencia especializada en SEO para Inteligencia Artificial`}
@@ -116,7 +116,7 @@ const LegalPage: React.FC<LegalPageProps> = ({ type }) => {
               Escríbenos y te responderemos pronto.
             </p>
             
-            <div className="bg-gray-900 p-8 rounded-lg border border-gray-800 mb-8">
+            <div className="bg-gray-900 bg-opacity-30 p-8 rounded-lg border border-gray-800 mb-8 backdrop-blur-sm">
               <h2 className="text-2xl font-bold text-white mb-4">Email de contacto</h2>
               <a 
                 href="mailto:hello@seo2geo.io"

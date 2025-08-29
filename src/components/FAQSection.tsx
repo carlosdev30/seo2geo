@@ -101,7 +101,7 @@ const FAQSection: React.FC = () => {
   };
 
   return (
-    <section id="faq" className="bg-gray-900 py-16">
+    <section id="faq" className="py-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <div className="flex items-center justify-center mb-4">
@@ -117,7 +117,7 @@ const FAQSection: React.FC = () => {
 
         <div className="space-y-4 mb-8">
           {faqs.map((faq, index) => (
-            <div key={index} className="faq-item bg-black rounded-lg border border-gray-800 overflow-hidden">
+            <div key={index} className="faq-item bg-black bg-opacity-30 rounded-lg border border-gray-800 overflow-hidden backdrop-blur-sm">
               <button
                 className="faq-trigger w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-800 transition-colors duration-200"
                 aria-expanded={openFAQ === index ? "true" : "false"}

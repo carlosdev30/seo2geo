@@ -21,7 +21,7 @@ const OfferingsSection: React.FC = () => {
   ];
 
   return (
-    <section className="bg-black py-16">
+    <section className="py-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
           Qué ofrecemos
@@ -29,7 +29,7 @@ const OfferingsSection: React.FC = () => {
         
         <div className="grid md:grid-cols-3 gap-8">
           {offerings.map((offering, index) => (
-            <div key={index} className="bg-gray-900 p-8 rounded-lg border border-gray-800 text-center hover:border-teal-green transition-colors duration-300">
+            <div key={index} className="bg-gray-900 bg-opacity-30 p-8 rounded-lg border border-gray-800 text-center hover:border-teal-green transition-colors duration-300 backdrop-blur-sm">
               <div className="flex justify-center mb-6">
                 {offering.icon}
               </div>

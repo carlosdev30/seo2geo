@@ -120,7 +120,7 @@ const ServicesPage: React.FC = () => {
   ];
 
   return (
-    <div id="top-servicios" className="min-h-screen bg-black text-white">
+    <div id="top-servicios" className="min-h-screen text-white">
       <SEOHead 
         title="AI Visibility Boost - Servicios | SEO2GEO"
         description="Implementación completa de visibilidad en buscadores de IA. Aparece en ChatGPT, Gemini, Perplexity y Google con IA en 4-6 semanas."
@@ -153,7 +153,7 @@ const ServicesPage: React.FC = () => {
           </p>
 
           {/* Contact Form */}
-          <div className="bg-gray-900 p-8 rounded-lg border border-gray-800 mb-8 max-w-2xl mx-auto">
+          <div className="bg-gray-900 bg-opacity-30 p-8 rounded-lg border border-gray-800 mb-8 max-w-2xl mx-auto backdrop-blur-sm">
             {!isSubmitted ? (
               <>
                 <h3 className="text-2xl font-bold text-white mb-6">
@@ -166,7 +166,7 @@ const ServicesPage: React.FC = () => {
                     value={formData.nombre}
                     onChange={handleChange}
                     placeholder="Nombre completo"
-                    className="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-green focus:ring-1 focus:ring-teal-green"
+                    className="w-full px-4 py-3 bg-black bg-opacity-50 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-green focus:ring-1 focus:ring-teal-green"
                     required
                   />
                   <input
@@ -175,7 +175,7 @@ const ServicesPage: React.FC = () => {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="Email"
-                    className="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-green focus:ring-1 focus:ring-teal-green"
+                    className="w-full px-4 py-3 bg-black bg-opacity-50 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-green focus:ring-1 focus:ring-teal-green"
                     required
                   />
                   <input
@@ -184,7 +184,7 @@ const ServicesPage: React.FC = () => {
                     value={formData.telefono}
                     onChange={handleChange}
                     placeholder="Teléfono"
-                    className="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-green focus:ring-1 focus:ring-teal-green"
+                    className="w-full px-4 py-3 bg-black bg-opacity-50 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-green focus:ring-1 focus:ring-teal-green"
                     required
                   />
                   <input
@@ -193,7 +193,7 @@ const ServicesPage: React.FC = () => {
                     value={formData.website}
                     onChange={handleChange}
                     placeholder="https://tusitio.com (incluye https://)"
-                    className="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-green focus:ring-1 focus:ring-teal-green"
+                    className="w-full px-4 py-3 bg-black bg-opacity-50 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-green focus:ring-1 focus:ring-teal-green"
                     required
                   />
                   <button
@@ -225,7 +225,7 @@ const ServicesPage: React.FC = () => {
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             {benefits.map((benefit, index) => (
-              <div key={index} className="bg-gray-900 p-6 rounded-lg border border-gray-800 hover:border-teal-green transition-colors duration-300">
+              <div key={index} className="bg-gray-900 bg-opacity-30 p-6 rounded-lg border border-gray-800 hover:border-teal-green transition-colors duration-300 backdrop-blur-sm">
                 <h3 className="text-xl font-bold text-teal-green mb-4">
                   {benefit.title}
                 </h3>
@@ -290,7 +290,7 @@ const ServicesPage: React.FC = () => {
         </div>
 
         {/* White Label Section */}
-        <div className="mb-16 bg-gray-900 p-12 rounded-lg border border-gray-800">
+        <div className="mb-16 bg-gray-900 bg-opacity-30 p-12 rounded-lg border border-gray-800 backdrop-blur-sm">
           <div className="text-center mb-8">
             <Users className="w-12 h-12 text-teal-green mx-auto mb-4" />
             <h2 className="text-3xl font-bold text-white mb-6">

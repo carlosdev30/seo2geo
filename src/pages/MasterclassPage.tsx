@@ -61,7 +61,7 @@ const MasterclassPage: React.FC = () => {
   ));
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen text-white">
       <SEOHead 
         title="Masterclass gratuita — SEO para Inteligencia Artificial | SEO2GEO"
         description="Masterclass gratuita de 45 minutos para aprender cómo posicionarte en ChatGPT, Gemini, Perplexity y los resúmenes de IA de Google."
@@ -88,7 +88,7 @@ const MasterclassPage: React.FC = () => {
         </div>
 
         {/* What you'll learn */}
-        <div className="bg-gray-900 p-8 rounded-lg border border-gray-800 mb-8">
+        <div className="bg-gray-900 bg-opacity-30 p-8 rounded-lg border border-gray-800 mb-8 backdrop-blur-sm">
           <h2 className="text-2xl font-bold text-teal-green mb-6 text-center">
             En esta Masterclass descubrirás…
           </h2>
@@ -164,7 +164,7 @@ const MasterclassPage: React.FC = () => {
         </div>
 
         {/* Registration form */}
-        <div className="bg-gray-900 p-8 rounded-lg border border-gray-800 mb-8">
+        <div className="bg-gray-900 bg-opacity-30 p-8 rounded-lg border border-gray-800 mb-8 backdrop-blur-sm">
           {!isSubmitted ? (
             <>
               <h3 className="text-2xl font-bold text-white mb-6 text-center">
@@ -181,7 +181,7 @@ const MasterclassPage: React.FC = () => {
                       name="nombre"
                       value={formData.nombre}
                       onChange={handleChange}
-                      className="w-full px-3 py-2 bg-black border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-green focus:ring-1 focus:ring-teal-green"
+                      className="w-full px-3 py-2 bg-black bg-opacity-50 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-green focus:ring-1 focus:ring-teal-green"
                       required
                     />
                   </div>
@@ -194,7 +194,7 @@ const MasterclassPage: React.FC = () => {
                       name="apellidos"
                       value={formData.apellidos}
                       onChange={handleChange}
-                      className="w-full px-3 py-2 bg-black border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-green focus:ring-1 focus:ring-teal-green"
+                      className="w-full px-3 py-2 bg-black bg-opacity-50 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-green focus:ring-1 focus:ring-teal-green"
                       required
                     />
                   </div>

@@ -85,7 +85,7 @@ const MasterclassModal: React.FC<MasterclassModalProps> = ({ isOpen, onClose }) 
     >
       <div 
         ref={modalRef}
-        className="bg-gray-900 rounded-lg max-w-2xl w-full p-8 border border-gray-700 relative max-h-[90vh] overflow-y-auto"
+        className="bg-gray-900 bg-opacity-95 rounded-lg max-w-2xl w-full p-8 border border-gray-700 relative max-h-[90vh] overflow-y-auto backdrop-blur-sm"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close button */}

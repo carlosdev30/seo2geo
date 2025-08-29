@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section id="hero" className="bg-black text-white py-20">
+    <section id="hero" className="text-white py-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
           <span className="block sm:inline">SEO para</span> <span className="text-teal-green">Inteligencia Artificial</span>
@@ -25,14 +25,14 @@ const Hero: React.FC = () => {
         </p>
 
         {/* Formulario principal */}
-        <div className="bg-gray-900 p-8 rounded-lg border border-gray-800 mb-8">
+        <div className="bg-gray-900 bg-opacity-30 p-8 rounded-lg border border-gray-800 mb-8 backdrop-blur-sm">
           <form onSubmit={handleSubmit} className="space-y-4" id="formulario-analisis">
             <input
               type="url"
               value={url}
               onChange={(e) => setUrl(e.target.value)}
               placeholder="https://tusitio.com (incluye https://)"
-              className="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-green focus:ring-1 focus:ring-teal-green"
+              className="w-full px-4 py-3 bg-black bg-opacity-50 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-green focus:ring-1 focus:ring-teal-green backdrop-blur-sm"
               required
             />
             <button

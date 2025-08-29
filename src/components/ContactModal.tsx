@@ -42,7 +42,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose, websiteUrl
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
-      <div className="bg-gray-900 rounded-lg max-w-md w-full p-6 border border-gray-700">
+      <div className="bg-gray-900 bg-opacity-95 rounded-lg max-w-md w-full p-6 border border-gray-700 backdrop-blur-sm">
         <div className="flex justify-between items-center mb-6">
           <h3 className="text-xl font-bold text-white">Completa tu solicitud</h3>
           <button
@@ -65,7 +65,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose, websiteUrl
                 value={formData.websiteUrl}
                 onChange={handleChange}
                 placeholder="https://tusitio.com (incluye https://)"
-                className="w-full px-3 py-2 bg-black border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-green focus:ring-1 focus:ring-teal-green"
+                className="w-full px-3 py-2 bg-black bg-opacity-50 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-green focus:ring-1 focus:ring-teal-green"
                 ref={firstInputRef}
                 required
               />
@@ -80,7 +80,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose, websiteUrl
                 name="nombre"
                 value={formData.nombre}
                 onChange={handleChange}
-                className="w-full px-3 py-2 bg-black border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-green focus:ring-1 focus:ring-teal-green"
+                className="w-full px-3 py-2 bg-black bg-opacity-50 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-green focus:ring-1 focus:ring-teal-green"
                 required
               />
             </div>
@@ -94,7 +94,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose, websiteUrl
                 name="apellidos"
                 value={formData.apellidos}
                 onChange={handleChange}
-                className="w-full px-3 py-2 bg-black border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-green focus:ring-1 focus:ring-teal-green"
+                className="w-full px-3 py-2 bg-black bg-opacity-50 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-green focus:ring-1 focus:ring-teal-green"
                 required
               />
             </div>
@@ -108,7 +108,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose, websiteUrl
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full px-3 py-2 bg-black border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-green focus:ring-1 focus:ring-teal-green"
+                className="w-full px-3 py-2 bg-black bg-opacity-50 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-green focus:ring-1 focus:ring-teal-green"
                 required
               />
             </div>
@@ -122,7 +122,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose, websiteUrl
                 name="telefono"
                 value={formData.telefono}
                 onChange={handleChange}
-                className="w-full px-3 py-2 bg-black border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-green focus:ring-1 focus:ring-teal-green"
+                className="w-full px-3 py-2 bg-black bg-opacity-50 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-green focus:ring-1 focus:ring-teal-green"
                 required
               />
             </div>

@@ -123,7 +123,7 @@ const FAQPage: React.FC = () => {
   };
 
   return (
-    <div id="top-faq" className="min-h-screen bg-black text-white">
+    <div id="top-faq" className="min-h-screen text-white">
       <SEOHead 
         title="Preguntas Frecuentes | SEO2GEO"
         description="Resuelve todas tus dudas sobre SEO para Inteligencia Artificial. Preguntas frecuentes sobre optimización para ChatGPT, Gemini y buscadores de IA."
@@ -154,7 +154,7 @@ const FAQPage: React.FC = () => {
 
         <div className="space-y-4 mb-16">
           {faqs.map((faq, index) => (
-            <div key={index} className="faq-item bg-gray-900 rounded-lg border border-gray-800 overflow-hidden">
+            <div key={index} className="faq-item bg-gray-900 bg-opacity-30 rounded-lg border border-gray-800 overflow-hidden backdrop-blur-sm">
               <button
                 className="faq-trigger w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-800 transition-colors duration-200"
                 aria-expanded={openFAQ === index ? "true" : "false"}
@@ -187,7 +187,7 @@ const FAQPage: React.FC = () => {
         </div>
 
         {/* Learn More Section */}
-        <div className="bg-gray-900 p-8 rounded-lg border border-gray-800">
+        <div className="bg-gray-900 bg-opacity-30 p-8 rounded-lg border border-gray-800 backdrop-blur-sm">
           <h2 className="text-2xl font-bold text-white mb-6 text-center">
             ¿Quieres aprender más?
           </h2>

@@ -153,7 +153,7 @@ const GlossaryPage: React.FC = () => {
   );
 
   return (
-    <div id="top-glosario" className="min-h-screen bg-black text-white">
+    <div id="top-glosario" className="min-h-screen text-white">
       <SEOHead 
         title="Glosario SEO para IA | SEO2GEO"
         description="Glosario completo de términos de SEO para Inteligencia Artificial. Aprende los conceptos clave para optimizar tu web para ChatGPT, Gemini y buscadores de IA."
@@ -188,14 +188,14 @@ const GlossaryPage: React.FC = () => {
               placeholder="Buscar término..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-10 pr-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-green focus:ring-1 focus:ring-teal-green"
+              className="w-full pl-10 pr-4 py-3 bg-gray-900 bg-opacity-30 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-green focus:ring-1 focus:ring-teal-green"
             />
           </div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {filteredTerms.map((item, index) => (
-            <div key={index} className="bg-gray-900 p-6 rounded-lg border border-gray-800 hover:border-teal-green transition-colors duration-300">
+            <div key={index} className="bg-gray-900 bg-opacity-30 p-6 rounded-lg border border-gray-800 hover:border-teal-green transition-colors duration-300 backdrop-blur-sm">
               <h3 className="text-lg font-bold text-teal-green mb-3">
                 {item.term}
               </h3>
@@ -215,7 +215,7 @@ const GlossaryPage: React.FC = () => {
         )}
 
         {/* Learn More Section */}
-        <div className="bg-gray-900 p-8 rounded-lg border border-gray-800">
+        <div className="bg-gray-900 bg-opacity-30 p-8 rounded-lg border border-gray-800 backdrop-blur-sm">
           <h2 className="text-2xl font-bold text-white mb-6 text-center">
             ¿Quieres aprender más?
           </h2>
@@ -227,7 +227,7 @@ const GlossaryPage: React.FC = () => {
               <Link
                 key={post.slug}
                 to={`/blog/${post.slug}`}
-                className="block bg-black p-6 rounded-lg border border-gray-800 hover:border-teal-green transition-colors duration-300"
+                className="block bg-black bg-opacity-30 p-6 rounded-lg border border-gray-800 hover:border-teal-green transition-colors duration-300 backdrop-blur-sm"
               >
                 <h3 className="text-lg font-semibold text-white mb-3 leading-tight">
                   {post.title}

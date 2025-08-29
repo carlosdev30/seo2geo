@@ -24,14 +24,14 @@ const CTABlock: React.FC = () => {
             Introduce la URL de tu sitio y recibe tu análisis gratuito junto con una asesoría personalizada de 20 minutos.
           </p>
 
-          <div className="bg-gray-900 p-8 rounded-lg border border-gray-800 mb-8 max-w-2xl mx-auto">
+          <div className="bg-gray-900 bg-opacity-30 p-8 rounded-lg border border-gray-800 mb-8 max-w-2xl mx-auto backdrop-blur-sm">
             <form onSubmit={handleSubmit} className="space-y-4">
               <input
                 type="url"
                 value={url}
                 onChange={(e) => setUrl(e.target.value)}
                 placeholder="https://tusitio.com (incluye https://)"
-                className="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-military-green focus:ring-1 focus:ring-military-green"
+                className="w-full px-4 py-3 bg-black bg-opacity-50 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-military-green focus:ring-1 focus:ring-military-green"
                 required
               />
               <button
