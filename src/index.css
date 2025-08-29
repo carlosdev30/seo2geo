@@ -122,11 +122,12 @@ html {
 }
 
 .cosmic-bg {
+  /* More subtle gradients that work with AnimatedBackground */
   background: 
-    radial-gradient(circle at 20% 80%, rgba(34, 197, 94, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(116, 170, 156, 0.08) 0%, transparent 50%),
-    radial-gradient(circle at 40% 40%, rgba(34, 197, 94, 0.05) 0%, transparent 50%),
-    linear-gradient(135deg, #000000 0%, #0a0a0a 100%);
+    radial-gradient(circle at 20% 80%, rgba(34, 197, 94, 0.03) 0%, transparent 60%),
+    radial-gradient(circle at 80% 20%, rgba(116, 170, 156, 0.02) 0%, transparent 60%),
+    radial-gradient(circle at 40% 40%, rgba(34, 197, 94, 0.02) 0%, transparent 60%);
+  /* Allow the AnimatedBackground to show through */
 }
 
 .dots-bg {

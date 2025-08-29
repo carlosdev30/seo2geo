@@ -10,15 +10,15 @@
     pointer-events: none;
 }
 
-/* OVERLAY PARA ASEGURAR BACKGROUND */
+/* OVERLAY PARA ASEGURAR BACKGROUND - Más sutil para permitir cosmic-bg */
 .background-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(ellipse at center, #0a1a0a 0%, #000000 70%);
-    z-index: -1;
+    background: radial-gradient(ellipse at center, rgba(10, 26, 10, 0.3) 0%, rgba(0, 0, 0, 0.5) 70%);
+    z-index: -2;
 }
 
 /* === ESTRELLAS === */
@@ -26,7 +26,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 10;
 }
 
 .star {
@@ -75,7 +75,7 @@
     right: 5%;
     filter: blur(1px);
     will-change: transform, opacity;
-    z-index: 5 !important;
+    z-index: 8 !important;
     opacity: 1 !important;
 }
 
@@ -94,7 +94,7 @@
     left: -5%;
     filter: blur(2px);
     will-change: transform;
-    z-index: 5 !important;
+    z-index: 8 !important;
     opacity: 1 !important;
 }
 
@@ -112,7 +112,7 @@
     left: 70%;
     filter: blur(1px);
     will-change: transform;
-    z-index: 5 !important;
+    z-index: 8 !important;
     opacity: 1 !important;
 }
 
@@ -204,7 +204,7 @@
     top: 15%;
     left: 5%;
     animation: triangleFloat1 20s ease-in-out infinite;
-    z-index: 3;
+    z-index: 6;
 }
 
 .triangle-2 {
@@ -217,7 +217,7 @@
     top: 60%;
     right: 8%;
     animation: triangleFloat2 25s ease-in-out infinite reverse;
-    z-index: 3;
+    z-index: 6;
 }
 
 .triangle-3 {
@@ -230,7 +230,7 @@
     top: 80%;
     left: 15%;
     animation: triangleFloat3 18s ease-in-out infinite;
-    z-index: 3;
+    z-index: 6;
 }
 
 /* === ANIMACIONES DE TRIÁNGULOS === */
@@ -264,7 +264,7 @@
     top: 25%;
     right: 15%;
     animation: squareFloat1 22s ease-in-out infinite;
-    z-index: 3;
+    z-index: 6;
     border: 1px solid rgba(0, 255, 127, 0.1);
 }
 
@@ -276,7 +276,7 @@
     top: 70%;
     left: 8%;
     animation: squareFloat2 28s ease-in-out infinite reverse;
-    z-index: 3;
+    z-index: 6;
     border: 1px solid rgba(34, 197, 94, 0.08);
     transform: rotate(45deg);
 }
@@ -289,7 +289,7 @@
     top: 45%;
     right: 25%;
     animation: squareFloat3 16s ease-in-out infinite;
-    z-index: 3;
+    z-index: 6;
     border: 1px solid rgba(0, 255, 127, 0.07);
 }
 
