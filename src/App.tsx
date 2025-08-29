@@ -11,20 +11,22 @@ import MasterclassPage from './pages/MasterclassPage';
 
 function App() {
   return (
-    <Router>
-      <AnimatedBackground />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/servicios" element={<ServicesPage />} />
-        <Route path="/blog/:slug" element={<BlogPost />} />
-        <Route path="/faq" element={<FAQPage />} />
-        <Route path="/glosario" element={<GlossaryPage />} />
-        <Route path="/masterclass" element={<MasterclassPage />} />
-        <Route path="/legal" element={<LegalPage type="legal" />} />
-        <Route path="/privacidad" element={<LegalPage type="privacy" />} />
-        <Route path="/contacto" element={<LegalPage type="contact" />} />
-      </Routes>
-    </Router>
+    <div className="min-h-screen cosmic-bg">
+      <Router>
+        <AnimatedBackground />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/servicios" element={<ServicesPage />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/faq" element={<FAQPage />} />
+          <Route path="/glosario" element={<GlossaryPage />} />
+          <Route path="/masterclass" element={<MasterclassPage />} />
+          <Route path="/legal" element={<LegalPage type="legal" />} />
+          <Route path="/privacidad" element={<LegalPage type="privacy" />} />
+          <Route path="/contacto" element={<LegalPage type="contact" />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 

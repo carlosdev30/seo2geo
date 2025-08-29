@@ -115,3 +115,38 @@ html {
 .faq-trigger[aria-expanded="true"] {
   /* estilo activo opcional */
 }
+
+/* Background Options */
+.gradient-bg {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+}
+
+.cosmic-bg {
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(34, 197, 94, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(116, 170, 156, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(34, 197, 94, 0.05) 0%, transparent 50%),
+    linear-gradient(135deg, #000000 0%, #0a0a0a 100%);
+}
+
+.dots-bg {
+  background-color: #000000;
+  background-image: 
+    radial-gradient(circle, rgba(34, 197, 94, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.grid-bg {
+  background-color: #000000;
+  background-image: 
+    linear-gradient(rgba(34, 197, 94, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(34, 197, 94, 0.05) 1px, transparent 1px);
+  background-size: 100px 100px;
+}
+
+.noise-bg {
+  background: 
+    radial-gradient(circle at 25% 25%, rgba(34, 197, 94, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(116, 170, 156, 0.08) 0%, transparent 50%),
+    linear-gradient(135deg, #000000 0%, #111111 50%, #000000 100%);
+}
