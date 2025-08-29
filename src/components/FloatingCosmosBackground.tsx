@@ -349,8 +349,8 @@ const FloatingCosmosBackground: React.FC<FloatingCosmosBackgroundProps> = ({
   return (
     <canvas
       ref={canvasRef}
-      className="fixed inset-0 pointer-events-none cosmos-base-bg"
-      style={{ zIndex: -10 }}
+      className="fixed inset-0 pointer-events-none"
+      style={{ zIndex: -2 }}
       aria-hidden="true"
     />
   );

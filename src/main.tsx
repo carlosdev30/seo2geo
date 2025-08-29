@@ -100,16 +100,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }, true);
 });
 
-// Initialize cosmos background after DOM is ready
-document.addEventListener('DOMContentLoaded', () => {
-  const cosmosContainer = document.createElement('div');
-  cosmosContainer.id = 'cosmos-root';
-  document.body.appendChild(cosmosContainer);
-  
-  const cosmosRoot = createRoot(cosmosContainer);
-  cosmosRoot.render(<FloatingCosmosBackground />);
-});
-
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <HelmetProvider>

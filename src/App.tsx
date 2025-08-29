@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import FloatingCosmosBackground from './components/FloatingCosmosBackground';
 import HomePage from './pages/HomePage';
 import ServicesPage from './pages/ServicesPage';
 import BlogPost from './pages/BlogPost';
@@ -10,17 +11,12 @@ import MasterclassPage from './pages/MasterclassPage';
 
 function App() {
   return (
-    <div className="relative min-h-screen">
-      {/* Background Components */}
-      <div className="fixed inset-0 pointer-events-none" style={{ zIndex: -10 }}>
-        <div className="cosmos-base-bg w-full h-full" />
-        <div className="grid-overlay fixed inset-0" style={{ zIndex: -9 }} />
-        <canvas 
-          id="cosmos-canvas" 
-          className="fixed inset-0 w-full h-full"
-          style={{ zIndex: -8 }}
-        />
-      </div>
+    <div className="relative min-h-screen cosmos-base-bg">
+      {/* Grid Overlay */}
+      <div className="fixed inset-0 grid-overlay pointer-events-none" style={{ zIndex: -1 }} />
+      
+      {/* Cosmos Background */}
+      <FloatingCosmosBackground />
       
       <Router>
         <Routes>
