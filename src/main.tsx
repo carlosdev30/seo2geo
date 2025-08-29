@@ -1,6 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { HelmetProvider } from 'react-helmet-async';
+import FloatingCosmosBackground from './components/FloatingCosmosBackground';
 import App from './App.tsx';
 import './index.css';
 
@@ -97,6 +98,16 @@ document.addEventListener('DOMContentLoaded', () => {
       window.scrollTo(0, 0);
     }
   }, true);
+});
+
+// Initialize cosmos background after DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+  const cosmosContainer = document.createElement('div');
+  cosmosContainer.id = 'cosmos-root';
+  document.body.appendChild(cosmosContainer);
+  
+  const cosmosRoot = createRoot(cosmosContainer);
+  cosmosRoot.render(<FloatingCosmosBackground />);
 });
 
 createRoot(document.getElementById('root')!).render(

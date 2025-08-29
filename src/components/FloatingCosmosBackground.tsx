@@ -312,7 +312,7 @@ const FloatingCosmosBackground: React.FC<FloatingCosmosBackgroundProps> = ({
   }, [animate]);
 
   useEffect(() => {
-    const canvas = canvasRef.current;
+    const canvas = canvasRef.current || document.getElementById('cosmos-canvas') as HTMLCanvasElement;
     if (!canvas) return;
 
     // Initial setup

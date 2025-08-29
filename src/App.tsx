@@ -1,7 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import FloatingCosmosBackground from './components/FloatingCosmosBackground';
-import GridOverlay from './components/GridOverlay';
 import HomePage from './pages/HomePage';
 import ServicesPage from './pages/ServicesPage';
 import BlogPost from './pages/BlogPost';
@@ -12,9 +10,18 @@ import MasterclassPage from './pages/MasterclassPage';
 
 function App() {
   return (
-    <>
-      <FloatingCosmosBackground />
-      <GridOverlay />
+    <div className="relative min-h-screen">
+      {/* Background Components */}
+      <div className="fixed inset-0 pointer-events-none" style={{ zIndex: -10 }}>
+        <div className="cosmos-base-bg w-full h-full" />
+        <div className="grid-overlay fixed inset-0" style={{ zIndex: -9 }} />
+        <canvas 
+          id="cosmos-canvas" 
+          className="fixed inset-0 w-full h-full"
+          style={{ zIndex: -8 }}
+        />
+      </div>
+      
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -28,7 +35,7 @@ function App() {
           <Route path="/contacto" element={<LegalPage type="contact" />} />
         </Routes>
       </Router>
-    </>
+    </div>
   );
 }
 
