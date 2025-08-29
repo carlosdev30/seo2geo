@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Test background to ensure visibility */
+body {
+  background: #05070B;
+}
+
 /* CSS Variables for Cosmos Background */
 :root {
   --bg-0: #05070B;
